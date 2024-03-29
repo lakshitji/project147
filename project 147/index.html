@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src = "./dine.js"> </script>
+</head>
+
+<body>
+   <a-scene>
+      <a-camera wasd-controls-enabled="true" position = "0 5 20"></a-camera>
+      <a-assets>
+         <a-asset-item id = "couch-obj" src = "./couch/tinker.obj"></a-asset-item>
+         <a-asset-item id = "couch-mtl" src = "./couch/obj.mtl"></a-asset-item>
+
+         <a-asset-item id = "dine-obj" src = "./Dine/tinker.obj"></a-asset-item>
+         <a-asset-item id = "dine-mtl" src = "./Dine/obj.mtl"></a-asset-item>
+
+         <a-asset-item id = "drawer-obj" src = "./drawer/tinker.obj"></a-asset-item>
+         <a-asset-item id = "drawer-mtl" src = "./drawer/obj.mtl"></a-asset-item>
+
+         <a-asset-item id = "lamp-obj" src = "./lamp/tinker.obj"></a-asset-item>
+         <a-asset-item id = "lamp-mtl" src = "./lamp/obj.mtl"></a-asset-item>
+
+         <a-asset-item id = "table-obj" src = "./Table/tinker.obj"></a-asset-item>
+         <a-asset-item id = "table-mtl" src = "./Table/obj.mtl"></a-asset-item>
+
+         <a-asset-item id = "wall-obj" src = "./wall/tinker.obj"></a-asset-item>
+         <a-asset-item id = "wall-mtl" src = "./wall/obj.mtl"></a-asset-item>
+
+      </a-assets>
+      <a-entity obj-model = "obj:#couch-obj;mtl:#couch-mtl" position = "5 0 0" scale = "0.1 0.1 0.1" rotation = "-90 0 0" ></a-entity>
+
+      <a-entity obj-model = "obj:#dine-obj;mtl:#dine-mtl" position = "5 0 0" scale = "0.1 0.1 0.1" rotation = "-90 0 0" dine></a-entity>
+
+      <a-entity obj-model = "obj:#drawer-obj;mtl:#drawer-mtl" position = "5 0 0" scale = "0.1 0.1 0.1" rotation = "-90 0 0" ></a-entity>
+
+      <a-entity obj-model = "obj:#lamp-obj;mtl:#lamp-mtl" position = "5 0 0" scale = "0.1 0.1 0.1" rotation = "-90 0 0" ></a-entity>
+
+      <a-entity obj-model = "obj:#table-obj;mtl:#table-mtl" position = "5 0 0" scale = "0.1 0.1 0.1" rotation = "-90 0 0" dine></a-entity>
+
+      <a-entity obj-model = "obj:#wall-obj;mtl:#wall-mtl" position = "5 0 0" scale = "0.1 0.1 0.1" rotation = "-90 0 0"  ></a-entity>></a-entity>
+
+      
+
+      
+
+   </a-scene>
+
+</body>
+</html>
